@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bienvenue sur mon site !!</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f3f3;
+        text-align: center;
+        padding-top: 50px;
+      }
+      h1 {
+        color: #333;
+      }
+      p {
+        color: #666;
+        font-size: 1.2em;
+      }
+    </style>
   </head>
   <body>
-    <h1>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, fugit.
-      Mollitia deserunt reiciendis dicta itaque tenetur fugiat dolores libero
-      ducimus, voluptate odit laborum illum pariatur ullam, cumque debitis
-      aliquam neque!
-    </h1>
-
+    <h1>Bienvenue sur mon site web déployé avec Jenkins !</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos sunt
-      laudantium consequatur beatae aliquid architecto? Vitae at harum quasi
-      perspiciatis illo minus! Cum assumenda autem officia, ducimus nam soluta
-      praesentium natus doloremque aperiam quae, iusto mollitia atque quod
-      aliquid. Omnis odio libero suscipit nam explicabo fugit ducimus! Repellat
-      veritatis ut distinctio doloribus, vitae quam consequatur tempore, optio
-      adipisci, totam explicabo voluptatibus ab deleniti ipsam soluta error.
-      Debitis laborum recusandae illum ipsa minima labore? Reiciendis veniam vel
-      sed minima neque impedit voluptatem! Quos atque velit delectus possimus
-      libero ipsum mollitia dolorem. Neque repellat natus porro ab impedit hic,
-      quas blanditiis exercitationem omnis quidem ipsa fugit! Totam a autem eum
-      possimus atque perspiciatis quam quibusdam laborum quas id, harum nemo
-      nulla nam delectus, voluptatum omnis sit. Atque ex repellendus aliquid,
-      dolorum sunt quisquam! Animi sunt ipsum beatae nesciunt incidunt adipisci
-      soluta distinctio nemo consequatur! Facilis qui illum ad aspernatur
-      blanditiis odit!
+      Ce fichier HTML a été copié automatiquement par Jenkins dans
+      /var/www/html.
     </p>
-    <p>commit2</p>
+    <p>
+      Date de déploiement : <strong><span id="deployDate"></span></strong>
+    </p>
+
+    <script>
+      document.getElementById("deployDate").textContent =
+        new Date().toLocaleString();
+    </script>
   </body>
 </html>
